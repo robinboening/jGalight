@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<script type="text/javascript" src="jquery.1.5.2.min.js"></script>
+		<script type="text/javascript" src="jGalight.js"></script>
+		<link href="./styles.css" rel="stylesheet" type="text/css">
+	</head>
+	
+	<body>
+		
+		<div class="gallery">
+			<div class="big_image"></div>
+			<ul>
+				<li><img src="./images/image_01.jpg" alt="Image 01"></li>
+				<li><img src="./images/image_02.jpg" alt="Image 02"></li>
+				<li><img src="./images/image_03.jpg" alt="Image 03"></li>
+			</ul>
+		</div>
+		
+		<script language="javascript" type="text/javascript">
+			jQuery(document).ready(function() {
+				jQuery('.gallery').jGalight({effect: 'fade'});
+			});
+		</script>
+		
+	</body>
+</html>

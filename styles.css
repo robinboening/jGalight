@@ -1,0 +1,26 @@
+.jGalight ul { 
+	list-style: none;
+	position: relative;
+	top: 0; 
+	left: 0;
+	padding: 0;
+}
+
+.jGalight li { 
+	opacity: .75;
+	float: left; 
+	display: block; 
+	width: 80px; 
+	height: 80px; 
+	cursor: pointer;  
+	margin-right: 10px;
+	overflow: hidden;
+}
+
+.jGalight li img {
+	height: 80px;
+}
+
+.jGalight li:hover, .jGalight li.active { 
+	opacity: 1;
+}
