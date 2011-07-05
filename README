@@ -1,0 +1,30 @@
+This is a very simple and lightweight image gallery based on the jQuery javascript framework.
+
+The principle of this image gallery is that we dont need to render thumbnails seperatly.
+The thumbnails are the big images wich are resized via CSS.
+
+You need the jQuery javascript framework and the jGalight javascript and the css styles for the gallery.
+
+     <script type="text/javascript" src="jquery.1.5.2.min.js"></script>  
+     <script type="text/javascript" src="jGalight.js"></script>  
+     <link href="./styles.css" rel="stylesheet" type="text/css">
+
+     <div class="gallery">  
+     <div class="big_image"></div>  
+       <ul>  
+         <li><img src="./images/image_01.jpg" alt="Image 01"></li>  
+         <li><img src="./images/image_02.jpg" alt="Image 02"></li>  
+         <li><img src="./images/image_03.jpg" alt="Image 03"></li>  
+       </ul>  
+     </div>
+
+You just need to call the jQuery function jGalight() on the object you want.
+
+    <script language="javascript" type="text/javascript">  
+    jQuery(document).ready(function() {  
+        jQuery('.gallery').jGalight({effect: 'fade'});  
+    });  
+    </script>
+
+Example:
+http://www.liquidbass.de/demo/jGalight/
